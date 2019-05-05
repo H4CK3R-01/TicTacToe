@@ -10,14 +10,14 @@ public class Fenster implements ActionListener {
 		Program.applikation = new JFrame(Program.getProgramname());
 		Program.applikation.getContentPane().setBackground(new Color(r, g, b));
 
-		// Menüleiste erzeugen
+		// MenÃ¼leiste erzeugen
 		Program.menuBar = new JMenuBar();
 
-		// Menüelemente erzeugen
+		// MenÃ¼elemente erzeugen
 		Program.datei = new JMenu("Datei");
 		Program.hilfe = new JMenu("Hilfe");
 
-		// Untermenüelemente erzeugen
+		// UntermenÃ¼elemente erzeugen
 		Program.datei = new JMenu("Datei");
 
 		Program.newWindow = new JMenuItem("Neues Fenster", new ImageIcon("img/newWindow.gif"));
@@ -28,17 +28,17 @@ public class Fenster implements ActionListener {
 		Program.exit = new JMenuItem("Beenden", new ImageIcon("img/exit.gif"));
 		Program.exit.addActionListener(new ActionHandler());
 
-		// Menü 2
+		// MenÃ¼ 2
 		Program.hilfe = new JMenu("Hilfe");
 
-		Program.hintergrundFarbe = new JMenuItem("Farbe ändern", new ImageIcon("img/settings.gif"));
+		Program.hintergrundFarbe = new JMenuItem("Farbe Ã¤ndern", new ImageIcon("img/settings.gif"));
 		Program.hintergrundFarbe.addActionListener(new ActionHandler());
 
-		// Menüelemente hinzufügen
+		// MenÃ¼elemente hinzufÃ¼gen
 		Program.menuBar.add(Program.datei);
 		Program.menuBar.add(Program.hilfe);
 
-		// Untermenüelemente hinzufügen
+		// UntermenÃ¼elemente hinzufÃ¼gen
 		Program.datei.add(Program.newWindow);
 		Program.datei.addSeparator();
 		Program.datei.add(Program.exit);
@@ -79,7 +79,7 @@ public class Fenster implements ActionListener {
 		Program.btn[6].setBounds(202, 375, 148, 148);
 		Program.btn[7].setBounds(353, 375, 148, 148);
 
-		// Spielfeld erzeugen und zum Fenster hinzufügen
+		// Spielfeld erzeugen und zum Fenster hinzufÃ¼gen
 		Spielfeld feld = new Spielfeld();
 		Program.applikation.add(feld);
 	}

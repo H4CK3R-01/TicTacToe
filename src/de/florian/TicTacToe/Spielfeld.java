@@ -27,7 +27,6 @@ public class Spielfeld extends JLabel {
 		try {
 			g.drawImage(ImageIO.read(new File("img/x.png")), 50, 50, 150, 150, null);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

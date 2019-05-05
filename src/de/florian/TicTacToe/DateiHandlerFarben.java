@@ -27,7 +27,7 @@ public class DateiHandlerFarben {
 	}
 
 	public static void schreibeFarbe() {
-		Color farbauswahl = JColorChooser.showDialog(null, "Bitte Hintergrundfarbe ausw‰hlen", null);
+		Color farbauswahl = JColorChooser.showDialog(null, "Bitte Hintergrundfarbe ausw√§hlen", null);
 
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter("config/farbe.txt"));

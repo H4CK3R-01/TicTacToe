@@ -28,7 +28,7 @@ public class Program {
 	// Spieler der dran ist
 	public static int welcherSpieler = 0;
 	
-	// Array wer welches Feld ausgew‰hlt hat
+	// Array wer welches Feld ausgew√§hlt hat
 	public static int[] status = new int[9];
 
 	// Getter und Setter
